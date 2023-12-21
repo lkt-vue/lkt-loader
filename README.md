@@ -22,7 +22,7 @@ app.use(LktLoader);
 In case you want to change the loader, you can configure the component which will be displayed:
 
 ```typescript
-import LktLoader, {setCustomLoader} from 'lkt-loader';
+import LktLoader, {setCustomLoader, setCustomSpinner} from 'lkt-loader';
 
 app.use(LktLoader);
 
@@ -31,6 +31,8 @@ setCustomLoader('your-loader-component');
 // Or use an imported component
 import {Loader} from "path/to/Loader.vue";
 setCustomLoader(Loader);
+
+// setCustomSpinner works equal but for an smaller loader (for example, in lkt-button)
 ```
 
 ## Default stylesheet configuration

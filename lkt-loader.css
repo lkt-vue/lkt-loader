@@ -13,7 +13,6 @@
     display: block;
     width: var(--loader-inner-size);
     height: var(--loader-inner-size);
-    margin: 8px;
     border-radius: 50%;
     border: 6px solid var(--loader-color);
     border-color: var(--loader-color) transparent var(--loader-color) transparent;

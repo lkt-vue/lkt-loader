@@ -5,3 +5,4 @@ declare const LktLoader: {
 };
 export default LktLoader;
 export declare const setCustomLoader: (component: string | Component) => void;
+export declare const setCustomSpinner: (component: string | Component) => void;

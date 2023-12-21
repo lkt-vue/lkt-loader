@@ -1,33 +1,50 @@
-var l = Object.defineProperty;
-var m = (e, o, t) => o in e ? l(e, o, { enumerable: !0, configurable: !0, writable: !0, value: t }) : e[o] = t;
-var c = (e, o, t) => (m(e, typeof o != "symbol" ? o + "" : o, t), t);
-import { defineComponent as u, computed as d, openBlock as a, createElementBlock as n, createBlock as i, resolveDynamicComponent as L } from "vue";
-const r = class {
-  static setCustomLoader(o) {
-    r.CustomLoader = o;
+var _ = Object.defineProperty;
+var C = (t, e, s) => e in t ? _(t, e, { enumerable: !0, configurable: !0, writable: !0, value: s }) : t[e] = s;
+var i = (t, e, s) => (C(t, typeof e != "symbol" ? e + "" : e, s), s);
+import { defineComponent as u, computed as r, openBlock as n, createElementBlock as a, createBlock as d, resolveDynamicComponent as m } from "vue";
+const c = class {
+  static setCustomLoader(e) {
+    c.CustomLoader = e;
+  }
+  static setCustomSpinner(e) {
+    c.CustomSpinner = e;
   }
 };
-let s = r;
-c(s, "CustomLoader");
-const _ = { class: "lkt-loader-container" }, p = {
+let o = c;
+i(o, "CustomLoader"), i(o, "CustomSpinner");
+const k = { class: "lkt-loader-container" }, L = {
   key: 1,
   class: "lkt-loader"
-}, k = { name: "LktLoader", inheritAttrs: !1 }, C = /* @__PURE__ */ u({
-  ...k,
-  setup(e) {
-    const o = d(() => typeof s.CustomLoader < "u"), t = d(() => s.CustomLoader);
-    return (f, v) => (a(), n("div", _, [
-      o.value ? (a(), i(L(t.value), { key: 0 })) : (a(), n("div", p))
+}, f = { name: "LktLoader", inheritAttrs: !1 }, v = /* @__PURE__ */ u({
+  ...f,
+  setup(t) {
+    const e = r(() => typeof o.CustomLoader < "u"), s = r(() => o.CustomLoader);
+    return (l, p) => (n(), a("div", k, [
+      e.value ? (n(), d(m(s.value), { key: 0 })) : (n(), a("div", L))
     ]));
   }
-}), B = {
-  install: (e) => {
-    e.component("lkt-loader", C);
+}), h = { class: "lkt-spinner-container" }, y = {
+  key: 1,
+  class: "lkt-spinner"
+}, S = { name: "LktSpinner", inheritAttrs: !1 }, $ = /* @__PURE__ */ u({
+  ...S,
+  setup(t) {
+    const e = r(() => typeof o.CustomSpinner < "u"), s = r(() => o.CustomSpinner);
+    return (l, p) => (n(), a("div", h, [
+      e.value ? (n(), d(m(s.value), { key: 0 })) : (n(), a("div", y))
+    ]));
   }
-}, x = (e) => {
-  s.setCustomLoader(e);
+}), A = {
+  install: (t) => {
+    t.component("lkt-loader", v).component("lkt-spinner", $);
+  }
+}, D = (t) => {
+  o.setCustomLoader(t);
+}, E = (t) => {
+  o.setCustomSpinner(t);
 };
 export {
-  B as default,
-  x as setCustomLoader
+  A as default,
+  D as setCustomLoader,
+  E as setCustomSpinner
 };
