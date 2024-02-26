@@ -4,10 +4,13 @@ import { default as loader } from './lib-components/LktLoader.vue';
 import LktSpinner from './lib-components/LktSpinner.vue';
 import {Component} from "vue/dist/vue";
 import {Settings} from "./settings/Settings";
+import "../lkt-loader.css";
+import "../lkt-spinner.css";
 
 const LktLoader = {
   install: (app: App) => {
-    app.component('lkt-loader', loader).component('lkt-spinner', LktSpinner);
+    if (app.component('lkt-loader') === undefined) app.component('lkt-loader', loader);
+    if (app.component('lkt-spinner') === undefined) app.component('lkt-spinner', LktSpinner);
   },
 };
 
