@@ -1,13 +1,12 @@
-import { App } from 'vue';
+import { App, Plugin, Component } from 'vue';
 
 import { default as loader } from './lib-components/LktLoader.vue';
 import LktSpinner from './lib-components/LktSpinner.vue';
-import {Component} from "vue/dist/vue";
 import {Settings} from "./settings/Settings";
 import "../lkt-loader.css";
 import "../lkt-spinner.css";
 
-const LktLoader = {
+const LktLoader: Plugin = {
   install: (app: App) => {
     if (app.component('lkt-loader') === undefined) app.component('lkt-loader', loader);
     if (app.component('lkt-spinner') === undefined) app.component('lkt-spinner', LktSpinner);
