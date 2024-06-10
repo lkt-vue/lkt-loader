@@ -1,6 +1,5 @@
 import { Plugin, Component } from 'vue';
-import "../lkt-loader.css";
-import "../lkt-spinner.css";
+import "../style.css";
 declare const LktLoader: Plugin;
 export default LktLoader;
 export declare const setCustomLoader: (component: string | Component) => void;

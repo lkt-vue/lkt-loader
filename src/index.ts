@@ -3,8 +3,7 @@ import { App, Plugin, Component } from 'vue';
 import { default as loader } from './lib-components/LktLoader.vue';
 import LktSpinner from './lib-components/LktSpinner.vue';
 import {Settings} from "./settings/Settings";
-import "../lkt-loader.css";
-import "../lkt-spinner.css";
+import "../style.css";
 
 const LktLoader: Plugin = {
   install: (app: App) => {
