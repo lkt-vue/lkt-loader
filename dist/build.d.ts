@@ -1,6 +1,6 @@
-declare namespace S {
-    function install(t: any): void;
+declare namespace h {
+    function install(e: any): void;
 }
-declare function $(t: any): void;
-declare function x(t: any): void;
-export { S as default, $ as setCustomLoader, x as setCustomSpinner };
+declare function y(e: any): void;
+declare function S(e: any): void;
+export { h as default, y as setCustomLoader, S as setCustomSpinner };

@@ -1,7 +1,3 @@
-<script lang="ts">
-export default {name: "LktLoader", inheritAttrs: false}
-</script>
-
 <script lang="ts" setup>
 import {computed} from "vue";
 import {Settings} from "../settings/Settings";
