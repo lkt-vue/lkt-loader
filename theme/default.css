@@ -18,10 +18,8 @@
     --lkt-loader-border-style: solid;
 
     /** Colors */
-    --lkt-loader-color: #ffffff;
-    --lkt-spinner-color: #ffffff;
-    --lkt-loader-bg: #007ebc;
-    --lkt-loader-border-color: #ddd;
+    --lkt-loader-color: #007ebc;
+    --lkt-spinner-color: #007ebc;
 
     /** Effects */
     --lkt-loader-animation-duration: 1.2s;
