@@ -1,4 +1,4 @@
-import { defineComponent as i, computed as r, openBlock as s, createElementBlock as c, createBlock as d, resolveDynamicComponent as m } from "vue";
+import { defineComponent as i, computed as r, createElementBlock as c, openBlock as s, createBlock as d, resolveDynamicComponent as m } from "vue";
 const n = class n {
   static setCustomLoader(o) {
     n.CustomLoader = o;

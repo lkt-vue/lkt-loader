@@ -8,7 +8,7 @@ const hasCustomLoader = computed(() => typeof Settings.CustomLoader !== 'undefin
 
 <template>
     <div class="lkt-loader-container">
-        <component v-if="hasCustomLoader" v-bind:is="customLoader"></component>
-        <div v-else class="lkt-loader"></div>
+        <component v-if="hasCustomLoader" v-bind:is="customLoader"/>
+        <div v-else class="lkt-loader"/>
     </div>
 </template>

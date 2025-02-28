@@ -8,7 +8,7 @@ const hasCustomSpinner = computed(() => typeof Settings.CustomSpinner !== 'undef
 
 <template>
     <div class="lkt-spinner-container">
-        <component v-if="hasCustomSpinner" v-bind:is="customSpinner"></component>
-        <div v-else class="lkt-spinner"></div>
+        <component v-if="hasCustomSpinner" v-bind:is="customSpinner"/>
+        <div v-else class="lkt-spinner"/>
     </div>
 </template>
