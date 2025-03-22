@@ -1,27 +1,15 @@
 :root {
-    /** Font */
-    /*--lkt-loader-font-family: system-ui, Helvetica;*/
-    /*--lkt-loader-font-size: 17px;*/
-    /*--lkt-loader-font-weight: 400;*/
-    /*--lkt-loader-line-height: 1;*/
-    /*--lkt-loader-text-align: left;*/
+    --lkt-loader--outer--size: 80px;
+    --lkt-loader--inner--size: 64px;
+    --lkt-loader--border-radius: 50%;
+    --lkt-loader--border-width: 6px;
+    --lkt-loader--border-style: solid;
+    --lkt-loader--color: #007ebc;
+    --lkt-loader--animation-duration: 1.2s;
+    --lkt-loader--animation-function: linear;
 
-    /** Sizing */
-    --lkt-loader-outer-size: 80px;
-    --lkt-loader-inner-size: 64px;
-    --lkt-spinner-outer-size: 25px;
-    --lkt-spinner-inner-size: 25px;
-
-    /** Border */
-    --lkt-loader-border-radius: 50%;
-    --lkt-loader-border-width: 6px;
-    --lkt-loader-border-style: solid;
-
-    /** Colors */
-    --lkt-loader-color: #007ebc;
-    --lkt-spinner-color: #007ebc;
-
-    /** Effects */
-    --lkt-loader-animation-duration: 1.2s;
-    --lkt-loader-animation-function: linear;
+    /** Element: Spinner */
+    --lkt-spinner--outer--size: 25px;
+    --lkt-spinner--inner--size: 25px;
+    --lkt-spinner--color: #007ebc;
 }

@@ -11,35 +11,35 @@
 }
 
 .lkt-loader {
-    width: var(--lkt-loader-outer-size);
-    height: var(--lkt-loader-outer-size);
+    width: var(--lkt-loader--outer--size);
+    height: var(--lkt-loader--outer--size);
 }
 .lkt-spinner {
-    width: var(--lkt-spinner-outer-size);
-    height: var(--lkt-spinner-outer-size);
+    width: var(--lkt-spinner--outer--size);
+    height: var(--lkt-spinner--outer--size);
 }
 
 .lkt-loader:after,
 .lkt-spinner:after {
     content: " ";
     display: block;
-    border-radius: var(--lkt-loader-border-radius);
+    border-radius: var(--lkt-loader--border-radius);
 }
 
 .lkt-loader:after {
-    width: var(--lkt-loader-inner-size);
-    height: var(--lkt-loader-inner-size);
-    border: var(--lkt-loader-border-width) var(--lkt-loader-border-style) var(--lkt-loader-color);
-    border-color: var(--lkt-loader-color) transparent var(--lkt-loader-color) transparent;
-    animation: lkt-loader var(--lkt-loader-animation-duration) var(--lkt-loader-animation-function) infinite;
+    width: var(--lkt-loader--inner--size);
+    height: var(--lkt-loader--inner--size);
+    border: var(--lkt-loader--border-width) var(--lkt-loader--border-style) var(--lkt-loader--color);
+    border-color: var(--lkt-loader--color) transparent var(--lkt-loader--color) transparent;
+    animation: lkt-loader var(--lkt-loader--animation-duration) var(--lkt-loader--animation-function) infinite;
 }
 
 .lkt-spinner:after {
-    width: var(--lkt-spinner-inner-size);
-    height: var(--lkt-spinner-inner-size);
-    border: var(--lkt-loader-border-width) var(--lkt-loader-border-style) var(--lkt-spinner-color);
-    border-color: var(--lkt-spinner-color) transparent var(--lkt-spinner-color) transparent;
-    animation: lkt-spinner var(--lkt-loader-animation-duration) var(--lkt-loader-animation-function) infinite;
+    width: var(--lkt-spinner--inner--size);
+    height: var(--lkt-spinner--inner--size);
+    border: var(--lkt-loader--border-width) var(--lkt-loader--border-style) var(--lkt-spinner--color);
+    border-color: var(--lkt-spinner--color) transparent var(--lkt-spinner--color) transparent;
+    animation: lkt-spinner var(--lkt-loader--animation-duration) var(--lkt-loader--animation-function) infinite;
 }
 
 @keyframes lkt-loader {
